@@ -31,8 +31,8 @@
 </ol>
 <h2>#Author</h2>
 <p>
-  **Cherrisha Verma**
-  B.Tech Computer Engineering Student
-  ---
+  **Cherrisha Verma**<br>
+  B.Tech Computer Engineering Student<br>
+  ---<br>
   Thank you for visiting this repository!
 </p>
