@@ -1,0 +1,294 @@
+<html>
+    <head>
+        <title>My First PortFolio Website</title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background: #F4F6F8;
+                color: #374151;
+                line-height: 1.8;
+                padding-top: 140px;
+            }
+            nav{
+                position: fixed;
+                width: 100%;
+                background-color: #1F2937;
+                text-align: center;
+                padding: 18px;   
+                top:0;
+                left:0;
+                z-index:1000;
+            }
+            nav a{
+                color: rgb(70, 100, 144);
+                text-decoration: none;
+                margin: 15px;
+                font-weight: 600;
+            }
+            nav a:hover{
+                color: #60A5FA;
+            }
+            section{
+                 padding:110px 10% 70px;
+                 scroll-margin-top: 90px;
+            }
+            #home{
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-top: 60px;
+                align-items: center;
+                text-align: center;
+                background: linear-gradient(to bottom, #EAF2FF, #F4F6F8);
+                border-radius: 20px;
+                margin-bottom: 50px;
+            }
+            #home h1{
+                font-size: 4rem;
+                margin-bottom: 15px;
+            }
+            section{
+                max-width: 1000px;
+                margin: 80px auto;
+                padding: 30px;
+            }
+            h1{
+                color: #2563EB;
+                text-align: center;
+            }
+            h2{
+                color:#2563EB;
+                margin-bottom:30px;
+                padding-bottom:10px;
+                border-bottom:3px solid #2563EB;
+            }
+            h3{
+                color: #2563EB;
+            }
+            .card{
+                background:white;
+                border-radius:16px;
+                padding:30px;
+                margin-top: 15px;
+                border-left: 6px solid #2563EB;
+                box-shadow:
+                0 4px 12px rgba(0,0,0,0.1),
+                0 10px 15px rgba(0,0,0,0.08);
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table, th, td{
+                border: 1px solid black;
+            }
+            th,td{
+                text-align: center;
+                padding: 8px;
+            }
+            th{
+                background-color:#2563EB;
+                color:white;
+            }
+            button{
+                background:#2563EB;
+                color:white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover{
+                background:#1D4ED8;
+            }
+            footer{
+                text-align: center;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #333;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav>
+            <a href = "#home">Home</a>
+            <a href = "#about">About</a>
+            <a href = "#education">Education</a>
+            <a href = "#achievements">Achievements</a>
+            <a href = "#skills">Skills</a>
+            <a href = "#projects">Projects</a>
+            <a href = "#interests">Interests</a>
+            <a href = "#contact">Contact</a>
+        </nav>
+
+        <section id = "home">
+            <h1>Hello! I'm Cherrisha Verma</h1>
+            <h3>B.Tech Computer Engineering Student</h3>
+            <p>
+                Passionate about programming, web development and technology.
+                I enjoy building projects, learning new skills and creating
+                solutions through code.
+            </p>
+            <button onclick="showMessage()">
+                Explore My Portfolio
+            </button>
+        </section>
+
+        <section id = "about">
+            <h2>About me</h2>
+            <div class="card">
+                <p>
+                    I am a B.Tech. Computer Engineering student who enjoys learning about technology, programming and web development. 
+                    I love building projects and continuously improving my skills.
+                    My goal is to pursue higher studies and contribute to innovative technology solutions.
+                </p>
+            </div>    
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>School Education</h3>
+                <table>
+                    <tr>
+                        <th>Class</th>
+                        <th>Board</th>
+                        <th>School</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td>Central Board Of Secondary Education</td>
+                        <td>Sri Sathya Sai Vidya Vihar, Indore</td>
+                        <td>96.6%</td>
+                    </tr>
+                    <tr>
+                        <td>XII</td>
+                        <td>Central Board Of Secondary Education</td>
+                        <td>Sri Sathya Sai Vidya Vihar, Indore</td>
+                        <td>94.4%</td>
+                    </tr>
+                </table>
+                <h3>Undergraduation</h3>
+                <table>
+                    <tr>
+                        <th>Programme</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>University</th>
+                    </tr>
+                    <tr>
+                        <td>B.Tech.</td>
+                        <td>Computer Engineering</td>
+                        <td>2025-2029</td>
+                        <td>SVKM'S Narsee Monjee Institute Of Management And Sciences, Indore</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>My Achievements</h2>
+            <div class="card">
+                <ul>
+                    <li>Current CGPA : 9.21</li>
+                    <li>Class Representative : First Year (2025-26)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="card">
+                <ol>
+                    <li>
+                        Programming
+                        <ul>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Web
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Tools
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="card">
+                <ol>
+                    <li>
+                        My Portfolio Website
+                        <p>
+                                Developed using HTML, CSS and JavaScript to showcase
+                                 my education, skills, achievements and projects.
+                         </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <div class="card">
+                <p>
+                    Beyond academics and technology, I enjoy engaging in activities
+                    that help me stay creative, active, and continuously learn new
+                    things. These interests contribute to my personal growth and help
+                    me maintain a balanced lifestyle.
+                </p>
+
+                <ul>
+                    <li><strong>Software Development & Programming</strong> - Exploring new technologies and building projects.</li>
+                    <li><strong>Web Development</strong> - Creating websites and learning modern web technologies.</li>
+                    <li><strong>Basketball</strong> - Enjoying team sports that promote discipline, teamwork, and fitness.</li>
+                    <li><strong>Painting & Creative Arts</strong> - Expressing creativity through art and design.</li>
+                    <li><strong>Craft & DIY Projects</strong> - Designing and creating handmade projects that encourage innovation and problem-solving.</li>
+                    <li><strong>Driving & Exploring New Places</strong> - Experiencing new environments and learning from different perspectives.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="card">
+                <ul>
+                    <li>Email: <a href="mailto:cherrishaverma29@gmail.com">cherrishaverma29@gmail.com</a></li>
+                    <li>GitHub:<a href="https://github.com/cherrisha29" target="_blank">Visit my GitHub Profile</a></li>
+                    <li>LinkedIn: Coming Soon</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Designed & Developed by Cherrisha Verma</p>
+            <p>© 2026 All Rights Reserved</p>
+        </footer>
+
+        <script>
+            function showMessage() {
+            alert("Welcome to my portfolio website. Here you'll find information about my education, skills, achievements, projects and interests.");
+        }
+        </script>
+    </body>
+</html>
